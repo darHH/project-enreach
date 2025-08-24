@@ -27,28 +27,30 @@ export default function GalleryClient({ posts }: { posts: updatePostEntry[] }) {
   const isDesktop = useIsDesktop();
 
   const items = (posts ?? [])
-    .map(p => ({
+    .map((p) => ({
       src: urlFromAsset(p.fields.coverImage),
       alt: p.fields.title || 'Update',
-      href: `/stories/${p.fields.slug}`,
+      href: `/stories/${p.fields.slug}`
     }))
-    .filter(i => i.src);
+    .filter((i) => i.src);
 
   if (!items.length) return null;
 
   return (
     <section className="mx-auto flex w-full flex-col py-6 lg:py-12">
-      <div className="hidden lg:block">
-        <Marquee speed={50} gradient={false} autoFill pauseOnHover={isDesktop}>
+      <div className="block">
+        {' '}
+        {/* was hidden lg:block */}
+        <Marquee speed={40} gradient={false} pauseOnHover={false} pauseOnClick>
           {items.map((it, idx) => (
-            <div key={idx} className="mx-4 flex-shrink-0">
+            <div key={idx} className="mx-3 inline-block">
               <Link href={it.href} aria-label={it.alt}>
                 <Image
                   src={`${it.src}?w=900&h=500&fit=fill&fm=jpg&q=80`}
                   alt={it.alt}
                   width={600}
                   height={320}
-                  className="h-56 w-auto rounded-sm border-2 border-white object-cover"
+                  className="h-48 w-auto rounded-sm border-2 border-white object-cover md:h-56"
                 />
               </Link>
             </div>
