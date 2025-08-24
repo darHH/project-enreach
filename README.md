@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Project enREACH
+
+Your REACH, their future!
+
+Check out our live demo here: https://project-enreach.vercel.app/
+
+## Overview
+
+Project enREACH is a web application developed for Project REACH with a focus on donor expansion, donor retention, and admin sustainability. The platform **enhances donor engagement** through an improved web experience with features including:
+
+- **Stories tab**: Auto-updated stories from Project REACH via Contentful CMS
+- **Monthly newsletter**: Generated from Contentful posts and enhanced with AI for sharing with donors
+- **Donation page enhancements**: Leaderboards for more engaging donation tracking
+- **Donor page**: Collectible badges and donation statistics for users
+- **Home & About Us improvements**: Streamlined for better navigation and user experience
 
 ## Getting Started
 
-First, run the development server:
+Install required libraries and run development server:
 
 ```bash
+cd frontend
+
+npm i
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<div align="center">
+ <img width="450px" src="https://skillicons.dev/icons?i=react,nodejs,vercel,firebase" />
+</div>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Developed by:
 
-## Learn More
+- [Goh Teng Fong](https://github.com/GohTengFong)
+- [Clemen Ong](https://github.com/clemenong1)
+- [Lim Sim Yee](https://github.com/simei2k)
+- [Yu Seung Yeon](https://github.com/yuglyyy)
+- [Lambert Fong](https://github.com/Lmaberd)
+- [Zhuo Lin (Jolynn) Wee](https://github.com/jolwnn)
+- [Darren Teo](https://github.com/darHH)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
