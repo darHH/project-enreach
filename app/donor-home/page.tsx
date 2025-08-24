@@ -418,7 +418,7 @@ export default function Dashboard() {
           }}
         >
           {/* Area chart (xs: full, md: 8/12) */}
-          <Box sx={{ gridColumn: { xs: '1 / -1', md: 'span 8' }, mb: 3 }}>
+          <Box sx={{ gridColumn: '1 / -1', mb: 3 }}>
             {loading ? (
               <ChartLoadingPlaceholder />
             ) : (
@@ -469,7 +469,7 @@ export default function Dashboard() {
           </Box>
 
           {/* Badges (xs: full, md: 4/12) */}
-          <Box sx={{ gridColumn: { xs: '1 / -1', md: 'span 4' }, mb: 3 }}>
+          <Box sx={{ gridColumn: '1 / -1', mb: 3 }}>
             <Typography
               variant="h6"
               sx={{ fontWeight: "bold", mb: 2, color: "#333", textAlign: "center" }}
