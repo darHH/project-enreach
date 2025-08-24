@@ -536,7 +536,7 @@ export default function Dashboard() {
           </Box>
 
           {/* Region distribution (xs: full, md: 6/12) */}
-          <Box sx={{ gridColumn: { xs: '1 / -1', md: 'span 6' }, mb: 3 }}>
+          <Box sx={{ gridColumn: '1 / -1', mb: 3 }}>
             {loading ? (
               <ChartLoadingPlaceholder />
             ) : stats.count === 0 ? (
@@ -568,7 +568,7 @@ export default function Dashboard() {
           </Box>
 
           {/* School distribution (xs: full, md: 6/12) */}
-          <Box sx={{ gridColumn: { xs: '1 / -1', md: 'span 6' }, mb: 3 }}>
+          <Box sx={{ gridColumn: '1 / -1', mb: 3 }}>
             {loading ? (
               <ChartLoadingPlaceholder />
             ) : stats.count === 0 ? (
@@ -600,7 +600,7 @@ export default function Dashboard() {
           </Box>
 
           {/* Recent donations (xs: full, md: 7/12) */}
-          <Box sx={{ gridColumn: { xs: '1 / -1', md: 'span 7' }, mb: 3 }}>
+          <Box sx={{ gridColumn: '1 / -1', mb: 3 }}>
             <Card>
               <Typography variant="h6" sx={{ mb: 2, fontWeight: 800 }}>
                 Recent Donations
