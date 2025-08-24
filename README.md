@@ -19,8 +19,6 @@ Project enREACH is a web application developed for Project REACH with a focus on
 Install required libraries and run development server:
 
 ```bash
-cd frontend
-
 npm i
 
 npm run dev
